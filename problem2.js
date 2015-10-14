@@ -1,15 +1,16 @@
-var isEven = function(num) {
-	if (num % 2 === 0) {
-		return num;
-	} else {
-		return 0;
-	}
-}
 var evenFibonacciSum = function() {
-	sum = 0;
-	input2 = document.getElementById("problem_2_range");
-	for (i = 1; i<input2.value; i++) {
-		sum += isEven(i);
+	var sum = 0;
+	var arr = [1, 2];
+	for (i = 2; i<=document.getElementById("problem_2_range").value; i++) {
+		var fib = arr[i-2] + arr[i-1];
+		arr.push(fib);
+	}
+	for (i=0; i < arr.length; i++) {
+		if (arr[i] % 2 === 0) {
+			sum += arr[i];
+		} else {
+			continue;
+		}
 	}
 	document.getElementById("answer2").innerHTML = sum;
 }

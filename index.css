@@ -1,0 +1,26 @@
+body {
+	font-family: Arial;
+	padding-left:20px;
+}
+
+.problem {
+	border-width:1px;
+	border-style: solid;
+	border-color:#DDDDDD #AAAAAA #AAAAAA #DDDDDD;
+	padding:10px;
+}
+
+button {
+	height: 30px;
+	margin-left: 10px;
+}
+
+input {
+	margin-left: 10px;
+	height: 25px;
+	padding-left: 4px;
+}
+
+.answer {
+	font-style: italic;
+}

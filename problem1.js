@@ -8,7 +8,7 @@ var sum = function() {
 	var sum = 0;
 	var input = document.getElementById("problem_1_range");
 	var answer1 = document.getElementById("answer1");
-	for (i = 1; i < input.value; i++) {
+	for (var i = 1; i < input.value; i++) {
 		sum += isDivisible(i);
 	}
 
